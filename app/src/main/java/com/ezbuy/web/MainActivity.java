@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
+import android.view.View;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -64,6 +65,8 @@ public class MainActivity extends AppCompatActivity {
         webSetting.setJavaScriptEnabled(true);
 //        webView.loadUrl("file:///android_asset/web/index.html");
 //        webView.loadUrl("http://121.199.36.228:9090/index.html");
+        webView.requestFocus();
+        webView.requestFocus(View.FOCUS_DOWN);
         webView.loadUrl("http://121.199.36.228:8090/index.html");
     }
 
